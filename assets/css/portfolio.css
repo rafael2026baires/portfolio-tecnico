@@ -481,34 +481,3 @@ a {
 }
 
 /*  --------------------------------------------------------------------------- */
-
-/* RESPONSIVE VIDEO SOURCES */
-
-.video-card video.video-mobile {
-  display: none;
-}
-
-.video-card video.video-desktop {
-  display: block;
-}
-
-@media (max-width: 700px) {
-  .video-card video.video-desktop {
-    display: none;
-  }
-
-  .video-card video.video-mobile {
-    display: block;
-  }
-
-  .video-card video {
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 701px) {
-  .video-card video {
-    max-width: 820px;
-  }
-}
-
