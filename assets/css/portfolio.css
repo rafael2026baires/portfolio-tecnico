@@ -505,6 +505,60 @@ a {
   opacity: 1;
 }
 
+.image-lightbox {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 28px;
+  border: 0;
+  background: rgba(3, 10, 18, 0.94);
+}
+
+.image-lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+
+.image-lightbox::backdrop {
+  background: rgba(3, 10, 18, 0.94);
+}
+
+.image-lightbox-content {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 56px);
+  object-fit: contain;
+}
+
+.image-lightbox-close {
+  position: fixed;
+  top: 14px;
+  right: 18px;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: #0d1b2e;
+  color: #e8eef7;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .image-lightbox {
+    height: 100dvh;
+    padding: 16px;
+  }
+
+  .image-lightbox-content {
+    max-height: calc(100dvh - 32px);
+  }
+}
+
 
 /* =========================================================
    14) CONTACTO
