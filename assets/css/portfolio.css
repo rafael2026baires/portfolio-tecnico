@@ -238,6 +238,10 @@ a {
   background: #081525;
 }
 
+.trayectoria {
+  margin-top: 14px;
+}
+
 .section h2 {
   font-size: clamp(28px, 3vw, 40px);
   letter-spacing: -0.03em;
@@ -470,9 +474,28 @@ a {
   flex-wrap: wrap;
 }
 
+.image-demo-item {
+  flex: 1 1 0;
+  min-width: 280px;
+}
+
+.image-demo-item p {
+  min-height: 6.4em;
+}
+
+.image-demo-item a {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
 .demo-thumb {
-  width: 180px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   border-radius: 8px;
   cursor: pointer;
   opacity: 0.9;
@@ -511,7 +534,7 @@ a {
 
 .contact-links a {
   color: var(--accent);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 
